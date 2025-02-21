@@ -1128,14 +1128,72 @@ background:#eee;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Different Skill Colors */
-
+/* Skill Label Styling */
 .skill-label {
-  display: block;         /* Makes each skill appear on a new line */
+  display: block; /* Makes each skill appear on a new line */
   color: black;
-  margin-bottom: 10px;    /* Adjust the margin for spacing */
-  font-size: 16px;        /* Optional: Adjust font size */
-  font-weight: 600;       /* Optional: Make the text bold */
+  margin-bottom: 10px; /* Adjust the margin for spacing */
+  font-size: 16px; /* Optional: Adjust font size */
+  font-weight: 600; /* Optional: Make the text bold */
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+
+  /* Panel Styling */
+  .panel {
+    padding: 12px;
+  }
+
+  .panel-heading {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .panel-body {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Skill Labels */
+  .skill-label {
+    font-size: 14px;
+    width: 100%; /* Makes sure labels stretch to full width on mobile */
+    margin-bottom: 12px; /* Adds more spacing between labels */
+  }
+
+  .panel-icon {
+    font-size: 18px; /* Reduces the icon size on smaller screens */
+  }
+}
+
+/* Extra Small Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+
+  /* Panel Heading Font Size */
+  .panel-heading {
+    font-size: 14px;
+  }
+
+  /* Skill Label Padding & Font Size */
+  .skill-label {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  /* Reduces panel padding for very small screens */
+  .panel {
+    padding: 10px;
+  }
+
+  /* Reduces icon size for very small screens */
+  .panel-icon {
+    font-size: 16px;
+  }
 }
 
 
